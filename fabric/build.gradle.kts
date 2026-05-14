@@ -40,10 +40,22 @@ val publishArtifact = provider {
 // )
 extra["mavenDependencyWhitelist"] = emptyList<String>()
 
+repositories {
+    maven {
+        name = "Terraformers"
+        url = uri("https://maven.terraformersmc.com/")
+    }
+}
+
 dependencies {
     minecraft("com.mojang:minecraft:$minecraft_version")
     implementation("net.fabricmc:fabric-loader:$fabric_loader_version")
     implementation("net.fabricmc.fabric-api:fabric-api:$fabric_version")
+
+//    implementation("cc.sighs.oelib:OELib-fabric-26.1:0.2.3-dev2")
+    implementation(files("../libs/OELib-fabric-26.1-0.2.4.jar"))
+    implementation("curse.maven:controlify-835847:7899278")
+    implementation("com.terraformersmc:modmenu:18.0.0-alpha.8")
 }
 
 loom {

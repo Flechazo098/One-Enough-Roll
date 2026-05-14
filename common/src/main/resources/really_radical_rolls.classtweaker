@@ -1,0 +1,7 @@
+accessWidener v2 official
+# Generated from common/src/main/resources/META-INF/accesstransformer.cfg
+# Only Minecraft vanilla (net.minecraft.*) access widening is auto-converted.
+# For non-vanilla entries or unsupported directives, handle manually.
+# Descriptor inference source: common\build\moddev\artifacts\vanilla-26.1-1-sources.jar
+
+accessible method net/minecraft/client/gui/components/debug/DebugScreenEntries register (Lnet/minecraft/resources/Identifier;Lnet/minecraft/client/gui/components/debug/DebugScreenEntry;)Lnet/minecraft/resources/Identifier;

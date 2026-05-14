@@ -16,7 +16,16 @@
     "environment": "*",
     "entrypoints": {
         "main": [
-            "com.example.examplemod.ExampleModFabric"
+            "com.flechazo.reallyradicalrolls.fabric.ReallyRadicalRollsFabric"
+        ],
+        "client": [
+            "com.flechazo.reallyradicalrolls.fabric.ReallyRadicalRollsFabricClient"
+        ],
+        "modmenu": [
+            "com.flechazo.reallyradicalrolls.fabric.compat.ModMenuCompat"
+        ],
+        "controlify": [
+            "com.flechazo.reallyradicalrolls.compat.controlify.ControlifyCompat"
         ]
     },
     "mixins": [
@@ -27,7 +36,8 @@
         "fabricloader": ">=${fabric_loader_version}",
         "fabric-api": "*",
         "minecraft": "~${minecraft_version}",
-        "java": ">=${java_version}"
+        "java": ">=${java_version}",
+        "oelib": ">=0.2.4"
     },
     "suggests": {
         "another-mod": "*"

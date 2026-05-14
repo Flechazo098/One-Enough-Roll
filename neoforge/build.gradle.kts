@@ -36,6 +36,13 @@ val curseforgeProjectId = providers.gradleProperty("curseforge_project_neoforge"
 // )
 extra["mavenDependencyWhitelist"] = emptyList<String>()
 
+dependencies {
+//    implementation("cc.sighs.oelib:OELib-neoforge-26.1:0.2.3-dev2")
+    implementation(files("../libs/OELib-neoforge-26.1-0.2.4.jar"))
+    compileOnly("curse.maven:controlify-835847:7899279")
+    implementation(files("../libs/locusazzurro_icaruswings-26.1.2-0.7.0.jar"))
+}
+
 neoForge {
     version = neoforge_version
 

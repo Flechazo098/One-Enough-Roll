@@ -22,6 +22,11 @@ dependencies {
     // fabric and neoforge both bundle mixinextras, so it is safe to use it in common
     compileOnly("io.github.llamalad7:mixinextras-common:0.3.5")
     annotationProcessor("io.github.llamalad7:mixinextras-common:0.3.5")
+    compileOnly("org.ow2.asm:asm:9.8")
+
+//    compileOnly("cc.sighs.oelib:OELib-common-26.1:0.2.3-dev2")
+    compileOnly(files("../libs/OELib-fabric-26.1-0.2.4.jar"))
+    compileOnly("curse.maven:controlify-835847:7899278")
 }
 
 // Whitelist entries control which dependencies are kept/added in generated maven POM.

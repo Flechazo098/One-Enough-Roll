@@ -1,0 +1,29 @@
+{
+  "defaults": {
+    "really_radical_rolls:thrust_forward": {
+      "axis": "controlify:axis/left_stick_up"
+    },
+    "really_radical_rolls:thrust_backward": {
+      "axis": "controlify:axis/left_stick_down"
+    },
+    "really_radical_rolls:yaw_left": {
+      "axis": "controlify:axis/left_stick_left"
+    },
+    "really_radical_rolls:yaw_right": {
+      "axis": "controlify:axis/left_stick_right"
+    },
+    "really_radical_rolls:pitch_up": {
+      "axis": "controlify:axis/right_stick_up"
+    },
+    "really_radical_rolls:pitch_down": {
+      "axis": "controlify:axis/right_stick_down"
+    },
+    "really_radical_rolls:roll_left": {
+      "axis": "controlify:axis/right_stick_left"
+    },
+    "really_radical_rolls:roll_right": {
+      "axis": "controlify:axis/right_stick_right"
+    }
+  }
+}
+

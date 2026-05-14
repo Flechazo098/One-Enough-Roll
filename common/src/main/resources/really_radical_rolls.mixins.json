@@ -1,0 +1,27 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.flechazo.reallyradicalrolls.mixin",
+  "refmap": "${mod_id}.refmap.json",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "EntityMixin",
+    "KineticDamageMixin",
+    "LivingEntityMixin",
+    "PlayerMixin"
+  ],
+  "client": [
+    "ActivationBehaviourMixin",
+    "AvatarRendererMixin",
+    "EntityRenderStateMixin",
+    "ElytraThrustMixin",
+    "EntityRendererMixin",
+    "FlightHudMixin",
+    "LocalPlayerMixin",
+    "MouseHandlerMixin"
+  ],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
